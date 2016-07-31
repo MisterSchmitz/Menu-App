@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Menu-app by MisterSchmitz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Menu-app</h1>
+      <h2 class="project-tagline">Web application displaying a listing of restaurants and a corresponding menu for each restaurant.</h2>
+      <a href="https://github.com/MisterSchmitz/Menu-App" class="btn">View on GitHub</a>
+      <a href="https://github.com/MisterSchmitz/Menu-App/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/MisterSchmitz/Menu-App/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="project-3---item-catalog" class="anchor" href="#project-3---item-catalog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project 3 - Item Catalog</h1>
+
+<p>This web application displays a listing of restaurants, and a corresponding menu for each restaurant.  Registered users have the ability to create, update, and delete restaurants and menu items.</p>
+
+<p>The application is based in Python, makes use of the Flask web-development framework, and is backed by a SQLite database.  Google's OAuth2 specifications are used for authorization.</p>
+
+<h3>
+<a id="how-can-i-get-the-code" class="anchor" href="#how-can-i-get-the-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How can I get the code?</h3>
+
+<p>Feel free to Fork your own version of this code and play around within the files.</p>
+
+<h3>
+<a id="what-are-the-technical-requirements" class="anchor" href="#what-are-the-technical-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What are the technical requirements?</h3>
+
+<ul>
+<li>Python 2.7 (libraries: flask, flask-seasurf, sqlalchemy, werkzeug, oauth2client, ElementTree)</li>
+</ul>
+
+<h3>
+<a id="whats-included" class="anchor" href="#whats-included" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's Included</h3>
+
+<p>Within the repository you'll find the following files:</p>
+
+<pre><code>app.py
+database_setup.py
+restaurantmenu.db
+client_secrets.json
+static (directory)
+templates (directory)
+</code></pre>
+
+<h3>
+<a id="how-do-i-run-the-application" class="anchor" href="#how-do-i-run-the-application" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How do I run the application?</h3>
+
+<ol>
+<li>Run app.py.  This will host the application on a local server.</li>
+<li>Open web browser, and navigate to localhost:5000/</li>
+<li>Play around in the app!</li>
+</ol>
+
+<h3>
+<a id="application-features" class="anchor" href="#application-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Application Features</h3>
+
+<ul>
+<li>JSON and XML API endpoints provide read access to the restaurants and menu items in the database.</li>
+<li>Responsive web layout compatible with mobile and desktop browsers.</li>
+<li>Bootstrap styling for familiarity.</li>
+<li>Login using your Google credentials for access to 'Admin' features.</li>
+<li>Create new restaurants, and assign images or logos to each restaurant.</li>
+<li>Update menu item course, name, price, or description using dedicated forms.</li>
+</ul>
+
+<h3>
+<a id="using-the-api" class="anchor" href="#using-the-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using the API</h3>
+
+<p>Restaurants and Menu Items can be retrieved as JSON and XML types. Access these using the following urls:</p>
+
+<h4>
+<a id="all-restaurants" class="anchor" href="#all-restaurants" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>All Restaurants</h4>
+
+<p><code>/restaurants/JSON</code> <br>
+<code>/restaurants/XML</code></p>
+
+<h4>
+<a id="menu-details-for-a-specific-restaurant" class="anchor" href="#menu-details-for-a-specific-restaurant" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Menu details for a specific Restaurant</h4>
+
+<p><code>/restaurant/&lt;restaurant_id&gt;/menu/JSON</code> <br>
+<code>/restaurant/&lt;restaurant_id&gt;/menu/XML</code> <br>
+  Where <em>restaurant_id</em> is the integer id for the restaurant</p>
+
+<h4>
+<a id="specific-menu-item-details" class="anchor" href="#specific-menu-item-details" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Specific Menu item details</h4>
+
+<p><code>/restaurant/&lt;restaurant_id&gt;/menu/&lt;menu_id&gt;/JSON</code> <br>
+<code>/restaurant/&lt;restaurant_id&gt;/menu/&lt;menu_id&gt;/XML</code> <br>
+  Where <em>restaurant_id</em> is the integer id for the restaurant <br>
+  and <em>menu_id</em> is the integer id for the menu item <br></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/MisterSchmitz/Menu-App">Menu-app</a> is maintained by <a href="https://github.com/MisterSchmitz">MisterSchmitz</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
