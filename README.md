@@ -1,4 +1,4 @@
-# Project 3 - Item Catalog
+# Menu App
 This web application displays a listing of restaurants, and a corresponding menu for each restaurant.  Registered users have the ability to create, update, and delete restaurants and menu items.
 
 The application is based in Python, makes use of the Flask web-development framework, and is backed by a SQLite database.  Google's OAuth2 specifications are used for authorization.
