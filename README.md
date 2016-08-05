@@ -7,7 +7,8 @@ The application is based in Python, makes use of the Flask web-development frame
 Feel free to Fork your own version of this code and play around within the files.
 
 ### What are the technical requirements?
-* Python 2.7 (libraries: flask, flask-seasurf, sqlalchemy, werkzeug, oauth2client, ElementTree)
+* Python 2.7 https://www.python.org/downloads/
+* Python libraries: flask, flask-seasurf, sqlalchemy, werkzeug, oauth2client, requests, ElementTree)
 
 ### What's Included
 Within the repository you'll find the following files:
@@ -21,9 +22,10 @@ templates (directory)
 ```
 
 ### How do I run the application?
-1. Run app.py.  This will host the application on a local server.
-2. Open web browser, and navigate to localhost:5000/
-3. Play around in the app!
+1. Make sure you have Python 2.7 installed, along with all the required libraries.
+2. Run app.py.  This will host the application on a local server.
+3. Open web browser, and navigate to localhost:5000/
+4. Play around in the app!
 
 ### Application Features
 * JSON and XML API endpoints provide read access to the restaurants and menu items in the database.
